@@ -1,9 +1,11 @@
 echo ======== Starting boot ========
+mmcinfo
 usb start
 
-ext4load mmc 0:1 0x02000000 /uImage
-ext4load mmc 0:1 0x04000000 /uInitrd
+ext2load mmc 0:1 0x02000000 uImage
+ext2load mmc 0:1 0x04000000 /uInitrd
 
-setenv bootargs 'console=ttyS0,115200n8 vmalloc=48M cryptdevice=/dev/disk/by-uuid/25207d91-d9eb-4b6e-9617-27e5a5e57e66:cryptroot root=/dev/mapper/cubox-root rootfstype=ext4 ro rootwait'
+setenv bootargs 'console=ttyS0,115200n8 cryptdevice=/dev/disk/by-uuid/f4f0314f-4ffa-4da1-9a17-4a180d8ab794:cryptroot root=/dev/mapper/cubox-root rootfstype=ext4 ro rootdelay=10'; bootm 0x02000000 0x04000000
+
 bootm 0x02000000 0x04000000
 
