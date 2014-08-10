@@ -8,8 +8,6 @@
 version=`make kernelversion`
 dtb="dove-cubox.dtb"
 
-cd /usr/src/linux-$version
-
 echo "Building uImage and $dtb"
 make uImage $dtb
 
