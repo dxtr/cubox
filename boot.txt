@@ -1,11 +1,13 @@
-echo ======== Starting boot ========
-mmcinfo
-usb start
 
+echo ======== Starting subsystems ========
+mmcinfo; ide reset; ide info; usb start; usb info
+
+echo ======== Loading files ========
 ext2load mmc 0:1 0x02000000 uImage
-ext2load mmc 0:1 0x04000000 /uInitrd
 
-setenv bootargs 'console=ttyS0,115200n8 cryptdevice=/dev/disk/by-uuid/f4f0314f-4ffa-4da1-9a17-4a180d8ab794:cryptroot root=/dev/mapper/cubox-root rootfstype=ext4 ro rootdelay=10'; bootm 0x02000000 0x04000000
+echo ======== Setting bootargs ========
+setenv bootargs 'console=ttyS0,115200n8 root=/dev/sda3 rootfstype=ext4 ro rootdelay=3'
 
-bootm 0x02000000 0x04000000
+echo ======== Starting boot ========
+bootm 0x02000000
 
