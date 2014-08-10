@@ -1,0 +1,205 @@
+[    0.000000] Booting Linux on physical CPU 0x0
+[    0.000000] Linux version 3.14.4 (root@cubox.dxtr.im) (gcc version 4.7.3 (CRUX-ARM) ) #1 Fri May 30 20:18:00 CEST 2014
+[    0.000000] CPU: ARMv7 Processor [560f5815] revision 5 (ARMv7), cr=10c53c7d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, PIPT instruction cache
+[    0.000000] Machine model: SolidRun CuBox
+[    0.000000] Truncating RAM at 20000000-3fffffff to -2f7fffff (vmalloc region overlap).
+[    0.000000] Memory policy: Data cache writeback
+[    0.000000] On node 0 totalpages: 194560
+[    0.000000] free_area_init_node: node 0, pgdat c05fc890, node_mem_map ef20b000
+[    0.000000]   Normal zone: 1520 pages used for memmap
+[    0.000000]   Normal zone: 0 pages reserved
+[    0.000000]   Normal zone: 194560 pages, LIFO batch:31
+[    0.000000] CPU: All CPU(s) started in SVC mode.
+[    0.000000] pcpu-alloc: s0 r0 d32768 u32768 alloc=1*32768
+[    0.000000] pcpu-alloc: [0] 0 
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 193040
+[    0.000000] Kernel command line: console=ttyS0,115200n8 root=/dev/sda3 rootfstype=ext4 ro rootdelay=3
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] Memory: 765004K/778240K available (4365K kernel code, 252K rwdata, 1304K rodata, 171K init, 148K bss, 13236K reserved)
+[    0.000000] Virtual kernel memory layout:
+    vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+    fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+    vmalloc : 0xf0000000 - 0xff000000   ( 240 MB)
+    lowmem  : 0xc0000000 - 0xef800000   ( 760 MB)
+    modules : 0xbf000000 - 0xc0000000   (  16 MB)
+      .text : 0xc0008000 - 0xc059180c   (5671 kB)
+      .init : 0xc0592000 - 0xc05bcd5c   ( 172 kB)
+      .data : 0xc05be000 - 0xc05fd020   ( 253 kB)
+       .bss : 0xc05fd020 - 0xc0622280   ( 149 kB)
+[    0.000000] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+[    0.000000] NR_IRQS:135
+[    0.000014] sched_clock: 32 bits at 166MHz, resolution 6ns, wraps every 25769803770ns
+[    0.000177] Console: colour dummy device 80x30
+[    0.000201] Calibrating delay loop... 790.52 BogoMIPS (lpj=395264)
+[    0.009054] pid_max: default: 32768 minimum: 301
+[    0.009184] Mount-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.009197] Mountpoint-cache hash table entries: 2048 (order: 1, 8192 bytes)
+[    0.011957] CPU: Testing write buffer coherency: ok
+[    0.012209] Setting up static identity map for 0x424140 - 0x424174
+[    0.012998] devtmpfs: initialized
+[    0.013661] VFP support v0.3: implementor 56 architecture 2 part 20 variant 9 rev 5
+[    0.014123] pinctrl core: initialized pinctrl subsystem
+[    0.014783] regulator-dummy: no parameters
+[    0.015166] NET: Registered protocol family 16
+[    0.015908] DMA: preallocated 256 KiB pool for atomic coherent allocations
+[    0.017774] Dove 88AP510 SoC
+[    0.017800] Tauros2: Disabling L2 prefetch.
+[    0.017807] Tauros2: Disabling line fill burt8.
+[    0.017813] Tauros2: Enabling L2 cache.
+[    0.017819] Tauros2: L2 cache support initialised in ARMv7 mode.
+[    0.041004] bio: create slab <bio-0> at 0
+[    0.041331] reg-fixed-voltage 1.regulator: could not find pctldev for node /mbus/internal-regs/pin-ctrl@d0200/pmx-gpio-1, deferring probe
+[    0.041348] platform 1.regulator: Driver reg-fixed-voltage requests probe deferral
+[    0.042049] SCSI subsystem initialized
+[    0.042383] libata version 3.00 loaded.
+[    0.043024] usbcore: registered new interface driver usbfs
+[    0.043166] usbcore: registered new interface driver hub
+[    0.043309] usbcore: registered new device driver usb
+[    0.044523] Switched to clocksource orion_clocksource
+[    0.056186] NET: Registered protocol family 2
+[    0.056586] TCP established hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.056666] TCP bind hash table entries: 8192 (order: 3, 32768 bytes)
+[    0.056736] TCP: Hash tables configured (established 8192 bind 8192)
+[    0.056813] TCP: reno registered
+[    0.056824] UDP hash table entries: 512 (order: 1, 8192 bytes)
+[    0.056850] UDP-Lite hash table entries: 512 (order: 1, 8192 bytes)
+[    0.056997] NET: Registered protocol family 1
+[    0.057228] RPC: Registered named UNIX socket transport module.
+[    0.057236] RPC: Registered udp transport module.
+[    0.057242] RPC: Registered tcp transport module.
+[    0.057248] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.058786] futex hash table entries: 256 (order: -1, 3072 bytes)
+[    0.074674] NFS: Registering the id_resolver key type
+[    0.074718] Key type id_resolver registered
+[    0.074725] Key type id_legacy registered
+[    0.074758] fuse init (API version 7.22)
+[    0.075462] msgmni has been set to 1494
+[    0.087659] alg: No test for stdrng (krng)
+[    0.111192] alg: No test for fips(ansi_cprng) (fips_ansi_cprng)
+[    0.111221] NET: Registered protocol family 38
+[    0.111232] Key type asymmetric registered
+[    0.111683] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 253)
+[    0.111695] io scheduler noop registered
+[    0.111722] io scheduler cfq registered (default)
+[    0.112883] dove-pinctrl f10d0200.pin-ctrl: registered pinctrl driver
+[    0.113073] mv_xor f1060800.dma-engine: Marvell shared XOR driver
+[    0.123588] mv_xor f1060800.dma-engine: Marvell XOR: ( xor cpy )
+[    0.134585] mv_xor f1060800.dma-engine: Marvell XOR: ( xor cpy )
+[    0.134783] mv_xor f1060900.dma-engine: Marvell shared XOR driver
+[    0.145586] mv_xor f1060900.dma-engine: Marvell XOR: ( xor cpy )
+[    0.156586] mv_xor f1060900.dma-engine: Marvell XOR: ( xor cpy )
+[    0.161674] Serial: 8250/16550 driver, 2 ports, IRQ sharing disabled
+[    0.162777] f1012000.serial: ttyS0 at MMIO 0xf1012000 (irq = 7, base_baud = 10416666) is a 16550A
+[    0.658690] console [ttyS0] enabled
+[    0.663219] brd: module loaded
+[    0.670162] loop: module loaded
+[    0.673512] nbd: registered device at major 43
+[    0.686904] zram: Created 1 device(s) ...
+[    0.690912] Loading iSCSI transport class v2.0-870.
+[    0.696633] iscsi: registered transport (tcp)
+[    0.701320] sata_mv f10a0000.sata-host: version 1.28
+[    0.701450] sata_mv f10a0000.sata-host: slots 32 ports 1
+[    0.707832] scsi0 : sata_mv
+[    0.711016] ata1: SATA max UDMA/133 irq 62
+[    0.716809] m25p80 spi0.0: found n25q032, expected w25q32
+[    0.722207] m25p80 spi0.0: n25q032 (4096 Kbytes)
+[    0.728209] libphy: orion_mdio_bus: probed
+[    0.732976] mv643xx_eth: MV-643xx 10/100/1000 ethernet driver version 1.4
+[    0.793478] mv643xx_eth_port mv643xx_eth_port.0 eth0: port 0 with MAC address 00:50:43:64:0a:0a
+[    0.802270] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    0.808778] ehci-orion: EHCI orion driver
+[    0.812860] orion-ehci f1050000.usb-host: EHCI Host Controller
+[    0.818699] orion-ehci f1050000.usb-host: new USB bus registered, assigned bus number 1
+[    0.827397] orion-ehci f1050000.usb-host: irq 24, io mem 0xf1050000
+[    0.839547] orion-ehci f1050000.usb-host: USB 2.0 started, EHCI 1.00
+[    0.846629] hub 1-0:1.0: USB hub found
+[    0.850396] hub 1-0:1.0: 1 port detected
+[    0.854562] orion-ehci f1051000.usb-host: EHCI Host Controller
+[    0.860391] orion-ehci f1051000.usb-host: new USB bus registered, assigned bus number 2
+[    0.868436] orion-ehci f1051000.usb-host: irq 25, io mem 0xf1051000
+[    0.880544] orion-ehci f1051000.usb-host: USB 2.0 started, EHCI 1.00
+[    0.887567] hub 2-0:1.0: USB hub found
+[    0.891326] hub 2-0:1.0: 1 port detected
+[    0.895776] usbcore: registered new interface driver usb-storage
+[    0.902115] mousedev: PS/2 mouse device common for all mice
+[    0.907992] rtc-mv f10d8500.real-time-clock: rtc core: registered f10d8500.real-time- as rtc0
+[    0.921647] device-mapper: ioctl: 4.27.0-ioctl (2013-10-30) initialised: dm-devel@redhat.com
+[    0.931002] device-mapper: multipath: version 1.6.0 loaded
+[    0.936481] device-mapper: multipath round-robin: version 1.0.0 loaded
+[    0.943160] sdhci: Secure Digital Host Controller Interface driver
+[    0.949326] sdhci: Copyright(c) Pierre Ossman
+[    0.953668] sdhci-pltfm: SDHCI platform and OF driver helper
+[    0.959476] mmc0: no vqmmc regulator found
+[    0.963567] mmc0: no vmmc regulator found
+[    0.989538] mmc0: SDHCI controller on f1092000.sdio-host [f1092000.sdio-host] using DMA
+[    1.000133] alg: hash: Test 1 failed for mv-hmac-sha1
+[    1.005183] 00000000: 0c aa 9f d5 37 c3 79 3a 91 d9 21 5f 42 2b 2c 24
+[    1.011599] 00000010: b7 c3 16 0c
+[    1.016725] usbcore: registered new interface driver usbhid
+[    1.022286] usbhid: USB HID core driver
+[    1.026131] Netfilter messages via NETLINK v0.30.
+[    1.030829] nf_conntrack version 0.5.0 (11953 buckets, 47812 max)
+[    1.037421] nf_tables: (c) 2007-2009 Patrick McHardy <kaber@trash.net>
+[    1.044164] TCP: cubic registered
+[    1.048516] NET: Registered protocol family 10
+[    1.053760] sit: IPv6 over IPv4 tunneling driver
+[    1.059158] NET: Registered protocol family 17
+[    1.063675] Key type dns_resolver registered
+[    1.068047] ThumbEE CPU extension supported.
+[    1.072303] PJ4 iWMMXt coprocessor enabled.
+[    1.077026] registered taskstats version 1
+[    1.081185] regulator-dummy: disabling
+[    1.085352] USB Power: 5000 mV 
+[    1.088875] rtc-mv f10d8500.real-time-clock: setting system clock to 2014-08-10 11:50:59 UTC (1407671459)
+[    1.098651] Waiting 3 sec before mounting root device...
+[    1.124789] mmc0: new high speed SDHC card at address 1234
+[    1.130599] mmcblk0: mmc0:1234 SA04G 3.63 GiB 
+[    1.136847]  mmcblk0: p1 p2
+[    1.187562] ata1: SATA link up 1.5 Gbps (SStatus 113 SControl F300)
+[    1.205561] usb 2-1: new high-speed USB device number 2 using orion-ehci
+[    1.383437] usb-storage 2-1:1.0: USB Mass Storage device detected
+[    1.389775] scsi1 : usb-storage 2-1:1.0
+[    1.583590] ata1.00: ATA-8: TOSHIBA MK5055GSXF, FH305B, max UDMA/100
+[    1.589932] ata1.00: 976773168 sectors, multi 16: LBA48 NCQ (depth 31/32)
+[    1.602582] ata1.00: configured for UDMA/100
+[    1.607100] scsi 0:0:0:0: Direct-Access     ATA      TOSHIBA MK5055GS FH30 PQ: 0 ANSI: 5
+[    1.615998] sd 0:0:0:0: [sda] 976773168 512-byte logical blocks: (500 GB/465 GiB)
+[    1.623948] sd 0:0:0:0: [sda] Write Protect is off
+[    1.628738] sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+[    1.628819] sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+[    1.689891]  sda: sda1 sda2 sda3 sda4
+[    1.695118] sd 0:0:0:0: [sda] Attached SCSI disk
+[    2.406878] scsi 1:0:0:0: Direct-Access     SAMSUNG  HM320II          2AC1 PQ: 0 ANSI: 5
+[    2.416341] sd 1:0:0:0: [sdb] 625142448 512-byte logical blocks: (320 GB/298 GiB)
+[    2.424454] sd 1:0:0:0: [sdb] Write Protect is off
+[    2.429240] sd 1:0:0:0: [sdb] Mode Sense: 23 00 00 00
+[    2.429829] sd 1:0:0:0: [sdb] No Caching mode page found
+[    2.435132] sd 1:0:0:0: [sdb] Assuming drive cache: write through
+[    2.443453] sd 1:0:0:0: [sdb] No Caching mode page found
+[    2.448757] sd 1:0:0:0: [sdb] Assuming drive cache: write through
+[    2.891240]  sdb: sdb1
+[    2.896330] sd 1:0:0:0: [sdb] No Caching mode page found
+[    2.901635] sd 1:0:0:0: [sdb] Assuming drive cache: write through
+[    2.907711] sd 1:0:0:0: [sdb] Attached SCSI disk
+[    4.161448] EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null)
+[    4.169103] VFS: Mounted root (ext4 filesystem) readonly on device 8:3.
+[    4.206399] devtmpfs: mounted
+[    4.209518] Freeing unused kernel memory: 168K (c0592000 - c05bc000)
+[    4.593073] random: nonblocking pool is initialized
+[    4.867574] udevd[708]: starting version 182
+[    6.469214] bio: create slab <bio-1> at 1
+[    7.083324] EXT4-fs (sda3): re-mounted. Opts: data=ordered
+[    9.497440] EXT4-fs (sda3): re-mounted. Opts: data=ordered
+[    9.584450] EXT4-fs (dm-1): mounted filesystem with ordered data mode. Opts: (null)
+[    9.639481] EXT4-fs (dm-0): mounted filesystem with ordered data mode. Opts: (null)
+[    9.683378] EXT4-fs (dm-2): mounted filesystem with ordered data mode. Opts: (null)
+[    9.739902] EXT4-fs (dm-4): mounted filesystem with ordered data mode. Opts: (null)
+[    9.781713] EXT4-fs (dm-3): mounted filesystem with ordered data mode. Opts: (null)
+[    9.798019] EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+[    9.847265] Adding 979960k swap on /dev/sda2.  Priority:-1 extents:1 across:979960k 
+[   12.373441] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   14.883681] mv643xx_eth_port mv643xx_eth_port.0 eth0: link up, 1000 Mb/s, full duplex, flow control disabled
+[   14.883748] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
